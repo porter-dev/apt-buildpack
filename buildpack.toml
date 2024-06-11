@@ -1,4 +1,4 @@
-api = "0.10"
+api = "0.7"
 
 [buildpack]
 id = "fagiani/apt"
