@@ -156,10 +156,10 @@ else
 fi
 
 
-echo -e '[types]' > "${apt_layer}.toml"
-echo -e "\nlaunch = true" > "${apt_layer}.toml"
-echo -e "\nbuild = true" > "${apt_layer}.toml"
-echo -e "\ncache = true" > "${apt_layer}.toml"
+echo -e '[types]' > "/layers/fagiani_apt/apt.toml"
+echo -e "\nlaunch = true" >> "/layers/fagiani_apt/apt.toml"
+echo -e "\nbuild = true" >> "/layers/fagiani_apt/apt.toml"
+echo -e "\ncache = true" >> "/layers/fagiani_apt/apt.toml"
 
 end_time=$(date +%s%N)
 echo "Elapsed time: $(( $(( $end_time - $start_time )) / 1000000 ))ms" | indent
